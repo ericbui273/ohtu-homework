@@ -1,9 +1,9 @@
 import requests
 from player import Player
 
-class PlayerReader:
+class PlayerReader:# pylint: disable=too-few-public-methods
     def __init__(self, url):
-        self.file = requests.get(url).json()
+        self.file = requests.get(url,timeout=10).json()
 
     def get_players(self):
         players = []
@@ -12,5 +12,3 @@ class PlayerReader:
             players.append(Player(player))
 
         return players
-
-    

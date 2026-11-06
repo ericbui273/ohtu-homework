@@ -1,7 +1,7 @@
-class Player:
-    def __init__(self, dict):
-        self.name = dict['name']
-        self.nationality = dict['nationality']
-        self.goals = dict['goals']
-        self.assists = dict['assists']
-        self.team = dict['team']
+class Player: # pylint: disable=too-few-public-methods
+    def __init__(self, player):
+        self.name = player['name']
+        self.nationality = player['nationality']
+        self.goals = player['goals']
+        self.assists = player['assists']
+        self.team = player['team']
