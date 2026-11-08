@@ -21,7 +21,6 @@ def get_season_data():
 
 def get_nationality_data(stats):
     nationality_list = stats.nationality_list()
-
     rprint(
         f"""Nationality [bold magenta][{"/".join(nationality_list)}] [/bold magenta]
         [bold cyan]()[/bold cyan]: (Press ENTER to stop)"""

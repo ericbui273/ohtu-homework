@@ -8,6 +8,12 @@ class PlayerStats:
 
         return top_players
 
+    def top_scorers_by_team(self, team):
+        top_players = list(filter(lambda x: x.team == team, self.players))
+        top_players.sort(key=lambda x: x.assists + x.goals, reverse=True)
+
+        return top_players
+
     def nationality_list(self):
         nationality = set()
         for player in self.players:
@@ -15,3 +21,9 @@ class PlayerStats:
                 nationality.add(player.nationality)
 
         return list(nationality)
+
+    def top_goal_scorers(self, how_many):
+        """Palauttaa how_many eniten maaleja tehnyttä pelaajaa 
+        maalimäärän mukaan laskevassa järjestyksessä"""
+        top_players = sorted(self.players, key=lambda x: x.goals, reverse=True)
+        return top_players[:how_many]

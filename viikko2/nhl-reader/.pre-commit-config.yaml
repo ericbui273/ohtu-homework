@@ -1,9 +1,9 @@
 repos:
-- repo: local
-  hooks:
-    - id: pylint
-      name: pylint
-      entry: pylint
-      language: system
-      types: [python]
-      require_serial: true
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: uv run pylint --rcfile=C:/Users/buitr/Documents/Study/ohtu-homework/viikko2/nhl-reader/.pylintrc
+        language: system
+        types: [python]
+        require_serial: true
