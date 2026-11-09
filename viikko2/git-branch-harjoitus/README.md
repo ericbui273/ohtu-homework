@@ -1,1 +1,1 @@
-Read me file for git branch harjoitus
+Read me file for git branch harjoitus where I learn branching.
