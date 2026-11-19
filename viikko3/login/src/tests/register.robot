@@ -35,6 +35,41 @@ Register With Username That Is Already In Use
     Click  button >> text=Register
     Register Should Fail With Message  User with username eric already exists
 
+Register With Password Containing Letters And Numbers
+    Set Username  kalle
+    Set Password  kalle123
+    Set Password Confirmation  kalle123
+    Click  button >> text=Register
+    Register Should Succeed
+
+Register With Password Containing Letters And Special Character
+    Set Username  kalle
+    Set Password  kalle#abc
+    Set Password Confirmation  kalle#abc
+    Click  button >> text=Register
+    Register Should Succeed
+
+Register With Password Consisting Of Lowercase Letters
+    Set Username  kalle
+    Set Password  kallekalle
+    Set Password Confirmation  kallekalle
+    Click  button >> text=Register
+    Register Should Fail With Message  Password must contain at least one number or special character
+
+Register With Password Consisting Of Mixed-Case Letters
+    Set Username  kalle
+    Set Password  KalleKalle
+    Set Password Confirmation  KalleKalle
+    Click  button >> text=Register
+    Register Should Fail With Message  Password must contain at least one number or special character
+
+Register With Unmatched Password Confirmation
+    Set Username  kalle
+    Set Password  kalle1234
+    Set Password Confirmation  kalle4321
+    Click  button >> text=Register
+    Register Should Fail With Message  Passwords do not match
+
 *** Keywords ***
 Register Should Succeed
     Welcome Page Should Be Open

@@ -45,6 +45,8 @@ class UserService:
             raise UserInputError("Username must have at least 3 characters")
         if len(password) < 8:
             raise UserInputError("Password must have at least 8 characters")
+        if password.isalpha():
+            raise UserInputError("Password must contain at least one number or special character")
         if password != password_confirmation:
             raise UserInputError("Passwords do not match")
 
