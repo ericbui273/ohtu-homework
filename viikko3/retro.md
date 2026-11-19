@@ -1,0 +1,5 @@
+# Retrospective summary
+
+A retrospective is a meeting held at the end of a sprint where the team looks back at how they worked together. The main goal is to identify what went well, what did not go well, and what could be improved in the next sprint. According to the material, there are different techniques to use at a retrospective, such as Start, Stop, Continue or Glad, Sad, Mad. The team can also use a round-based method where everyone takes turns sharing their thoughts and agree on some improvements at the end. These improvements should be specific enough that the team can check whether they were actually implemented.
+
+During a retrospective, team members should be able to bring up problems without worrying about being blamed or judged. From my experience, what helps people dare to bring up problems during a retrospective is when other members are also open, honest and supportive. It is important to focus on improving the team's working process rather than criticizing individuals. Everyone should also have an equal opportunity to speak, and others should listen respectfully.
