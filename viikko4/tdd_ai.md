@@ -9,4 +9,4 @@ The agent did end up with a good implementation and high-quality tests that matc
 
 The agent also did not try to cheat by hard-coding the value expected. However, there are some repetitions in the code file and test file at the end, for which I asked it to do some refactoring.
 
-It is hard to say which division of work felt better. Part B saved more time since I only needed to give the test requirements and the agent implemented both the test and the code for the test to pass for me. However, when I wrote the tests myself in part A, I felt like I could understand the test and code better.
+It is hard to say which division of work felt better. Part B saved more time since I only needed to give the test requirements and the agent implemented both the test and the code for the test to pass for me. However, when I wrote the tests myself in part A, I felt like I could understand the test and code better. In my opinion, for the type of tests that I am completely familiar with, I can use agent to write it to save some repetitive typing time.
